@@ -147,11 +147,13 @@ class _StoragePageState extends State<StoragePage> {
               leading: SizedBox(
                 width: 60,
                 height: 40,
+                //child: Image.network(arquivos[index], fit: BoxFit.cover),
                 child: Image(
                   image: CachedNetworkImageProvider(arquivos[index]),
                   fit: BoxFit.cover,
                 ),
               ),
+              //title: Text(refs[index].fullPath),
               title: Text('Image $index'),
               trailing: IconButton(
                 icon: const Icon(Icons.delete),
